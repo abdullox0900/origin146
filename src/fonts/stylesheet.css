@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Albertus Nova';
+    src: url('AlbertusNova.woff2') format('woff2'),
+        url('AlbertusNova.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albertus Nova';
+    src: url('AlbertusNovaLight.woff2') format('woff2'),
+        url('AlbertusNovaLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albertus Nova';
+    src: url('AlbertusNovaBlack.woff2') format('woff2'),
+        url('AlbertusNovaBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albertus Nova';
+    src: url('AlbertusNovaThin.woff2') format('woff2'),
+        url('AlbertusNovaThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Albertus Nova';
+    src: url('AlbertusNova-Bold.woff2') format('woff2'),
+        url('AlbertusNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

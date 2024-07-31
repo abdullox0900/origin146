@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    position: relative;
+    background-image: url('../image/img-bg.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url('../image/head.svg');
+    background-size: cover;
+    z-index: -1;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 430px;
+    background-image: url('../image/footer.svg');
+    background-size: cover;
+    z-index: -1;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Header Start */
+.header {
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.header-container {
+    width: 930px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-list__link {
+    font-size: 26px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    color: #73cff8;
+    font-family: "Albertus Nova";
+    font-weight: 200;
+    filter: drop-shadow(-1.928px 2.298px 1px rgba(0, 0, 0, 0.5));
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 940px) {
+
+    .nav {
+        display: none;
+    }
+
+    .nav-list__link {
+        font-size: 18px;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .mobile-nav {
+        display: inline-block;
+    }
+
+    .mobile-nav .nav-list {
+        align-items: start;
+        flex-direction: column;
+        text-align: left;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+    body::after {
+        height: 250px;
+    }
+
+    body::before {
+        height: 250px;
+    }
+
+
+    .nav-list__link {
+        font-size: 14px;
+    }
+
+    .nav-list {
+        margin: 0;
+        gap: 10px;
+    }
+}
+
+/* Header End */
+
+
+/* Logo Section Start */
+.logo-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-section img {
+    margin-bottom: 80px;
+}
+
+.logo-section a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    width: 470px;
+    padding: 20px 0;
+    font-size: 31px;
+    letter-spacing: 2px;
+    color: #fdfbfb;
+    font-family: "Albertus Nova";
+    text-align: center;
+    background-image: url('../image/button-bg.png');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 80px;
+}
+
+.logo-section a:hover {
+    opacity: 0.8;
+}
+
+.logo-section a:active {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 940px) {
+    .logo-section img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .logo-section a {
+        width: 350px;
+        padding: 18px 0;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo-section img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .logo-section a {
+        width: 300px;
+        padding: 16px 0;
+        font-size: 14px;
+    }
+
+    .logo-section img {
+        margin-bottom: 35px;
+    }
+}
+
+/*  */
+
+
+/* Game News Start */
+.container-game {
+    width: 1350px;
+    padding: 0 20px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.game {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.game-news {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    gap: 10px;
+    margin-left: 50px;
+
+}
+
+.game-news__item {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 20px 20px 50px;
+    height: 360px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #000000;
+}
+
+.game-news__item h4 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 33px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Beaufortfor LO L";
+    filter: drop-shadow(-1.928px 2.298px 1px rgba(0, 0, 0, 0.5));
+    margin-bottom: 30px;
+}
+
+.game-news__item p {
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Beaufortfor LO L";
+    filter: drop-shadow(-1.928px 2.298px 1px rgba(0, 0, 0, 0.5));
+    margin-bottom: 95px;
+}
+
+.game-news__item a {
+    position: absolute;
+    bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Beaufortfor LO L";
+    text-align: center;
+    filter: drop-shadow(-1.928px 2.298px 1px rgba(0, 0, 0, 0.5));
+    padding: 10px 40px;
+    background-color: #2296d581;
+}
+
+.game-item-one {
+    width: 700px;
+    background-image: url('../image/game-one-bg.png');
+    background-size: cover;
+    background-position-y: -225px;
+    background-repeat: no-repeat;
+}
+
+.game-item-two {
+    width: 300px;
+    background-image: url('../image/game-two-bg.png');
+    background-size: cover;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+}
+
+.game-item-three {
+    width: 300px;
+    background-image: url('../image/game-three-bg.png');
+    background-size: cover;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+}
+
+.game-item-one::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 600px;
+    height: 400px;
+    background-image: url('../image/game-one-img.png');
+}
+
+.view-news {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 900px;
+    padding: 15px 0;
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: bold;
+    margin: 50px auto;
+    color: white;
+    background-color: rgba(27, 127, 194, 0.6);
+}
+
+.view-news:hover {
+    opacity: 0.8;
+}
+
+.view-news:active {
+    opacity: 0.6;
+}
+
+@media only screen and (max-width: 1350px) {
+    .container-game {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        overflow: auto;
+        overflow-y: scroll !important;
+    }
+
+    .game-item-one {
+        margin-left: 30px;
+    }
+
+    .game-item-three {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .game-news {
+        display: grid;
+        grid-template-columns: 70% 25% 25%;
+        width: 100%;
+        gap: 10px;
+        margin: 0;
+        overflow: auto;
+    }
+
+    .view-news {
+        width: 400px;
+        padding: 15px 0;
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .game-news__item {
+        padding: 25px;
+        height: 280px;
+    }
+
+    .game-news__item h4 {
+        font-size: 22px;
+        line-height: 22px;
+        margin-bottom: 15px;
+    }
+
+    .game-news__item p {
+        font-size: 16px;
+    }
+
+    .game-news__item a {
+        font-size: 14px;
+    }
+
+    .game-item-one {
+        width: 450px;
+        margin-left: 15px;
+    }
+
+    .view-news {
+        width: 300px;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: none;
+}
+
+.description {
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.vote-section img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-basis: 100%;
+    }
+}
