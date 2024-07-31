@@ -12,7 +12,7 @@ body {
 
 body {
     position: relative;
-    background-image: url('../image/img-bg.png');
+    background-image: url('../image/img-bg-min.webp');
     background-size: cover;
     background-attachment: fixed;
 }
