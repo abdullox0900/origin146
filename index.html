@@ -12,12 +12,23 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/css/sakura.min.css">
     <title>Document</title>
+    <style>
+        .w-710 { width: 60%; }
+        .w-15 { width: 20%; }
+    </style>
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Top Gradient -->
+  <div class="fixed inset-x-0 top-0 h-20 bg-gradient-to-b from-black to-transparent z-0"></div>
+
+  <!-- Bottom Gradient -->
+  <div class="fixed inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent z-0"></div>
 
     <!-- Header Start -->
-    <header class="header">
+    <header class="header relative">
+        <!-- <div class="gradient-bg absolute inset-0 h-[300px]"></div> -->
         <div class="header-container">
             <nav class="nav">
                 <ul class="nav-list">
@@ -70,11 +81,11 @@
             </div>
         </div>
     </header>
+   
     <!-- Header End -->
 
-    <div>
         <!-- Main Start -->
-        <main class="content">
+        <main class="flex-grow">
             <section class="logo-section">
                 <img src="./src/image/site-logo.png" alt="site-logo" width="330" height="350">
                 <a href="#">Начать играть</a>
@@ -85,7 +96,7 @@
             </span>
             <span class="hero-img-two"></span>
 
-            <section class='container-game w-full overflow-y-scroll scrollbar-hide flex gap-[12px] mb-[50px]'>
+            <!-- <section class='w-[1350px] mx-auto scrollbar-hide flex gap-[15px] mb-[50px]'>
                 <div class="flex-none game-news__item game-item-one">
                     <h4>Lorem Ipsum</h4>
                     <p>
@@ -96,6 +107,7 @@
                     </p>
                     <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
                 </div>
+               <div class="flex items-center gap-[15px]">
                 <div class="flex-none game-news__item game-item-two">
                     <h4>Lorem Ipsum</h4>
                     <p>
@@ -116,14 +128,55 @@
                     </p>
                     <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
                 </div>
-            </section>
+               </div>
+            </section> -->
 
+            <div class="flex flex-col md:flex-row gap-[20px] px-[20px]">
+                <div class="w-full md:w-6/10">
+                    <div class="game-news__item game-item-one">
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Это место, где ты можешь отдохнуть от ставших
+                            привычными гонок по головам, наслаждаясь тем
+                            самым Идеальным Миром, который когда-то покорил
+                            сердца миллионов игроков
+                        </p>
+                        <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/5">
+                    <div class="game-news__item game-item-two">
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Это место, где ты можешь отдохнуть от ставших
+                            привычными гонок по головам, наслаждаясь тем
+                            самым Идеальным Миром, который когда-то покорил
+                            сердца миллионов игроков
+                        </p>
+                        <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/5">
+                    <div class="game-news__item game-item-three">
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Это место, где ты можешь отдохнуть от ставших
+                            привычными гонок по головам, наслаждаясь тем
+                            самым Идеальным Миром, который когда-то покорил
+                            сердца миллионов игроков
+                        </p>
+                        <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
+                    </div>
+                </div>
+            </div>
             <a href="#" class="view-news">СМОТРЕТЬ ВСЕ НОВОСТИ НА ФОРУМЕ</a>
         </main>
         <!-- Main End -->
 
         <!-- Footer Start -->
-        <footer class="footer">
+        <footer class="footer relative z-[1]">
+            <!-- <div class="gradient-bottom absolute inset-0 bottom-1 h-[300px] z-[-1]"></div> -->
+
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">Origin146.ru</div>
@@ -169,7 +222,6 @@
             </div>
         </footer>
         <!-- Footer End -->
-    </div>
 
     <script src="./src/js/app.js"></script>
     <script src="./src/js/bootstrap.min.js"></script>

@@ -4,10 +4,8 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     overflow-x: hidden;
-    min-height: 100%;
 }
 
 body {
@@ -17,7 +15,11 @@ body {
     background-attachment: fixed;
 }
 
-body::after {
+/* body::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari va Opera uchun */
+/* } */ */
+
+/* body::after {
     content: '';
     position: absolute;
     top: 0;
@@ -37,8 +39,8 @@ body::before {
     height: 430px;
     background-image: url('../image/footer.svg');
     background-size: cover;
-    z-index: -1;
-}
+    z-index: -1; */
+/* } */
 
 ul {
     padding: 0;
@@ -52,6 +54,14 @@ a {
 
 span {
     display: inline-block;
+}
+
+.gradient-bg {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.gradient-bottom {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 
 /* Header Start */
@@ -242,6 +252,14 @@ span {
     overflow: hidden;
 }
 
+.container-game::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari va Opera uchun */
+}
+
+.game::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari va Opera uchun */
+}
+
 .game {
     width: 100%;
     overflow-y: scroll;
@@ -304,7 +322,6 @@ span {
 }
 
 .game-item-one {
-    width: 700px;
     background-image: url('../image/game-one-bg.png');
     background-size: cover;
     background-position-y: -225px;
@@ -312,7 +329,6 @@ span {
 }
 
 .game-item-two {
-    width: 300px;
     background-image: url('../image/game-two-bg.png');
     background-size: cover;
     background-position-y: 0;
@@ -320,7 +336,6 @@ span {
 }
 
 .game-item-three {
-    width: 300px;
     background-image: url('../image/game-three-bg.png');
     background-size: cover;
     background-position-y: 0;
@@ -369,11 +384,11 @@ span {
     }
 
     .game-item-one {
-        margin-left: 30px;
+        /* margin-left: 30px; */
     }
 
     .game-item-three {
-        margin-right: 30px;
+        /* margin-right: 30px; */
     }
 }
 
@@ -428,10 +443,10 @@ span {
         font-size: 14px;
     }
 
-    .game-item-one {
+    /* .game-item-one {
         width: 450px;
         margin-left: 15px;
-    }
+    } */
 
     .game-item-one::before {
         right: 10%;
@@ -472,12 +487,7 @@ span {
     }
 }
 
-.content {
-    flex: 1 0 auto;
-}
-
 .footer {
-    flex-shrink: 0;
     color: white;
     padding: 20px;
 }
