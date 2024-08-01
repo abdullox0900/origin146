@@ -13,22 +13,26 @@
     <link rel="stylesheet" href="./src/css/sakura.min.css">
     <title>Document</title>
     <style>
-        .w-710 { width: 60%; }
-        .w-15 { width: 20%; }
+        .w-710 {
+            width: 60%;
+        }
+
+        .w-15 {
+            width: 20%;
+        }
     </style>
 </head>
 
 <body class="flex flex-col min-h-screen">
 
     <!-- Top Gradient -->
-  <div class="fixed inset-x-0 top-0 h-20 bg-gradient-to-b from-black to-transparent z-0"></div>
+    <div class="fixed inset-x-0 top-0 h-20 bg-gradient-to-b from-black to-transparent z-0"></div>
 
-  <!-- Bottom Gradient -->
-  <div class="fixed inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent z-0"></div>
+    <!-- Bottom Gradient -->
+    <div class="fixed inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black to-transparent z-0"></div>
 
     <!-- Header Start -->
     <header class="header relative">
-        <!-- <div class="gradient-bg absolute inset-0 h-[300px]"></div> -->
         <div class="header-container">
             <nav class="nav">
                 <ul class="nav-list">
@@ -81,147 +85,114 @@
             </div>
         </div>
     </header>
-   
+
     <!-- Header End -->
 
-        <!-- Main Start -->
-        <main class="flex-grow">
-            <section class="logo-section">
-                <img src="./src/image/site-logo.png" alt="site-logo" width="330" height="350">
-                <a href="#">Начать играть</a>
-            </section>
+    <!-- Main Start -->
+    <main class="flex-grow">
+        <section class="logo-section">
+            <img class="animated-image" src="./src/image/site-logo.png" alt="site-logo" width="330" height="350">
+            <a href="#" class="transform transition-transform duration-300 ease-in-out hover:scale-110">Начать играть</a>
+        </section>
 
-            <span class="hero-img-one">
-                <!-- <img src="./src/image/hero-img-one.png" alt=""> -->
-            </span>
-            <span class="hero-img-two"></span>
+        <span class="hero-img-one"></span>
+        <span class="hero-img-two"></span>
 
-            <!-- <section class='w-[1350px] mx-auto scrollbar-hide flex gap-[15px] mb-[50px]'>
-                <div class="flex-none game-news__item game-item-one">
+        <div class="flex flex-col min-[1024px]:flex-row gap-[20px] px-[20px]">
+            <div class="w-full min-[1024px]:w-6/10  transform transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="game-news__item game-item-one relative">
                     <h4>Lorem Ipsum</h4>
-                    <p>
+                    <p >
                         Это место, где ты можешь отдохнуть от ставших
                         привычными гонок по головам, наслаждаясь тем
                         самым Идеальным Миром, который когда-то покорил
                         сердца миллионов игроков
                     </p>
-                    <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-                </div>
-               <div class="flex items-center gap-[15px]">
-                <div class="flex-none game-news__item game-item-two">
-                    <h4>Lorem Ipsum</h4>
-                    <p>
-                        Это место, где ты можешь отдохнуть от ставших
-                        привычными гонок по головам, наслаждаясь тем
-                        самым Идеальным Миром, который когда-то покорил
-                        сердца миллионов игроков
-                    </p>
-                    <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-                </div>
-                <div class="flex-none game-news__item game-item-three">
-                    <h4>Lorem Ipsum</h4>
-                    <p>
-                        Это место, где ты можешь отдохнуть от ставших
-                        привычными гонок по головам, наслаждаясь тем
-                        самым Идеальным Миром, который когда-то покорил
-                        сердца миллионов игроков
-                    </p>
-                    <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-                </div>
-               </div>
-            </section> -->
-
-            <div class="flex flex-col md:flex-row gap-[20px] px-[20px]">
-                <div class="w-full md:w-6/10">
-                    <div class="game-news__item game-item-one">
-                        <h4>Lorem Ipsum</h4>
-                        <p>
-                            Это место, где ты можешь отдохнуть от ставших
-                            привычными гонок по головам, наслаждаясь тем
-                            самым Идеальным Миром, который когда-то покорил
-                            сердца миллионов игроков
-                        </p>
-                        <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-                    </div>
-                </div>
-                <div class="w-full md:w-3/5">
-                    <div class="game-news__item game-item-two">
-                        <h4>Lorem Ipsum</h4>
-                        <p>
-                            Это место, где ты можешь отдохнуть от ставших
-                            привычными гонок по головам, наслаждаясь тем
-                            самым Идеальным Миром, который когда-то покорил
-                            сердца миллионов игроков
-                        </p>
-                        <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-                    </div>
-                </div>
-                <div class="w-full md:w-3/5">
-                    <div class="game-news__item game-item-three">
-                        <h4>Lorem Ipsum</h4>
-                        <p>
-                            Это место, где ты можешь отдохнуть от ставших
-                            привычными гонок по головам, наслаждаясь тем
-                            самым Идеальным Миром, который когда-то покорил
-                            сердца миллионов игроков
-                        </p>
-                        <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-                    </div>
+                    <a href="#" class="z-[1]">ЧИТАТЬ ДАЛЕЕ</a>
+                    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"></div>
                 </div>
             </div>
-            <a href="#" class="view-news">СМОТРЕТЬ ВСЕ НОВОСТИ НА ФОРУМЕ</a>
-        </main>
-        <!-- Main End -->
+            <div class="w-full min-[1024px]:w-3/5 transform transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="game-news__item game-item-two ">
+                    <h4>Lorem Ipsum</h4>
+                    <p>
+                        Это место, где ты можешь отдохнуть от ставших
+                        привычными гонок по головам, наслаждаясь тем
+                        самым Идеальным Миром, который когда-то покорил
+                        сердца миллионов игроков
+                    </p>
+                    <a href="#" class="z-[1]">ЧИТАТЬ ДАЛЕЕ</a>
+                    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"></div>
 
-        <!-- Footer Start -->
-        <footer class="footer relative z-[1]">
-            <!-- <div class="gradient-bottom absolute inset-0 bottom-1 h-[300px] z-[-1]"></div> -->
-
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="logo">Origin146.ru</div>
-                    <p class="description">ДАННЫЙ СЕРВЕР ЯВЛЯЕТСЯ ТЕСТОВЫМ ВАРИАНТОМ ИГРЫ PERFECT WORLD И ПРЕДНАЗНАЧЕН
-                        ТОЛЬКО ДЛЯ ОЗНАКОМЛЕНИЯ ИГРОКОВ. ВСЕ ПРАВА ПРИНАДЛЕЖАТ КОМПАНИИ MAIL.RU.</p>
-                    <h3>ГОЛОСУЙ ЗА НАШ СЕРВЕР</h3>
-                    <div class="vote-section">
-                        <a href="#">
-                            <img src="./src/image/footer-link-img.png" alt="Vote 1">
-                        </a>
-                        <a href="#">
-                            <img src="./src/image/footer-link-img.png" alt="Vote 1">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h3>ПОЛЕЗНОЕ</h3>
-                    <ul>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">База знаний</a></li>
-                        <li><a href="#">Библиотека</a></li>
-                        <li><a href="#">Статистика</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>АККАУНТ</h3>
-                    <ul>
-                        <li><a href="#">Личный кабинет</a></li>
-                        <li><a href="#">Быстрый старт</a></li>
-                        <li><a href="#">Файлы</a></li>
-                        <li><a href="#">Пожертвования</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>СООБЩЕСТВО</h3>
-                    <ul>
-                        <li><a href="#">Наш форум</a></li>
-                        <li><a href="#">Группа вконтакте</a></li>
-                        <li><a href="#">Канал youtube</a></li>
-                        <li><a href="#">Мы в facebook</a></li>
-                    </ul>
                 </div>
             </div>
-        </footer>
-        <!-- Footer End -->
+            <div class="w-full min-[1024px]:w-3/5 transform transition-transform duration-300 ease-in-out hover:scale-105">
+                <div class="game-news__item game-item-three">
+                    <h4>Lorem Ipsum</h4>
+                    <p>
+                        Это место, где ты можешь отдохнуть от ставших
+                        привычными гонок по головам, наслаждаясь тем
+                        самым Идеальным Миром, который когда-то покорил
+                        сердца миллионов игроков
+                    </p>
+                    <a href="#" class="z-[1]">ЧИТАТЬ ДАЛЕЕ</a>
+                    <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="view-news">СМОТРЕТЬ ВСЕ НОВОСТИ НА ФОРУМЕ</a>
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer class="footer relative z-[1]">
+        <!-- <div class="gradient-bottom absolute inset-0 bottom-1 h-[300px] z-[-1]"></div> -->
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">Origin146.ru</div>
+                <p class="description">ДАННЫЙ СЕРВЕР ЯВЛЯЕТСЯ ТЕСТОВЫМ ВАРИАНТОМ ИГРЫ PERFECT WORLD И ПРЕДНАЗНАЧЕН
+                    ТОЛЬКО ДЛЯ ОЗНАКОМЛЕНИЯ ИГРОКОВ. ВСЕ ПРАВА ПРИНАДЛЕЖАТ КОМПАНИИ MAIL.RU.</p>
+                <h3>ГОЛОСУЙ ЗА НАШ СЕРВЕР</h3>
+                <div class="vote-section">
+                    <a href="#">
+                        <img src="./src/image/footer-link-img.png" alt="Vote 1">
+                    </a>
+                    <a href="#">
+                        <img src="./src/image/footer-link-img.png" alt="Vote 1">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>ПОЛЕЗНОЕ</h3>
+                <ul>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">База знаний</a></li>
+                    <li><a href="#">Библиотека</a></li>
+                    <li><a href="#">Статистика</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>АККАУНТ</h3>
+                <ul>
+                    <li><a href="#">Личный кабинет</a></li>
+                    <li><a href="#">Быстрый старт</a></li>
+                    <li><a href="#">Файлы</a></li>
+                    <li><a href="#">Пожертвования</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>СООБЩЕСТВО</h3>
+                <ul>
+                    <li><a href="#">Наш форум</a></li>
+                    <li><a href="#">Группа вконтакте</a></li>
+                    <li><a href="#">Канал youtube</a></li>
+                    <li><a href="#">Мы в facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
 
     <script src="./src/js/app.js"></script>
     <script src="./src/js/bootstrap.min.js"></script>
@@ -246,7 +217,6 @@
                 },
             ],
         });
-
     </script>
 
 </body>

@@ -169,15 +169,15 @@ span {
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    width: 470px;
+    width: 450px;
     padding: 20px 0;
-    font-size: 31px;
+    font-size: 28px;
     letter-spacing: 2px;
     color: #fdfbfb;
     font-family: "Albertus Nova";
     text-align: center;
     background-image: url('../image/button-bg.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     margin-bottom: 80px;
 }
@@ -224,7 +224,7 @@ span {
 
 .hero-img-one {
     position: absolute;
-    left: 3%;
+    left: 5%;
     top: 12%;
     width: 500px;
     height: 650px;
@@ -235,8 +235,8 @@ span {
 
 .hero-img-two {
     position: absolute;
-    right: -5%;
-    top: 15%;
+    right: 5%;
+    top: 14%;
     width: 650px;
     height: 600px;
     background-image: url('../image/hero-img-two.png');
@@ -390,6 +390,21 @@ span {
     .game-item-three {
         /* margin-right: 30px; */
     }
+
+    
+    .hero-img-one {
+      display: none;
+    }
+
+    .hero-img-two {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+    .game-news__item {
+        padding: 20px;
+    }
 }
 
 @media only screen and (max-width: 940px) {
@@ -408,19 +423,6 @@ span {
         font-size: 24px;
     }
 
-    .hero-img-one {
-        left: 3%;
-        top: 20%;
-        width: 250px;
-        height: 350px;
-    }
-
-    .hero-img-two {
-        right: 0%;
-        top: 15%;
-        width: 500px;
-        height: 450px;
-    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -553,4 +555,22 @@ span {
     .footer-section {
         flex-basis: 100%;
     }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.animated-image {
+    animation: pulse 15s infinite;
+}
+
+.hover-scale:hover {
+        
+    /* transform: scale(1.05); */
 }
