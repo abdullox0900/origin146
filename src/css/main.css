@@ -15,6 +15,13 @@ body {
     background-attachment: fixed;
 }
 
+@media only screen and (max-width: 425px) {
+    body {
+        background-image: url('../image/img-bg-mobile.png');
+    }
+}
+
+
 /* body::-webkit-scrollbar {
     display: none;  /* Chrome, Safari va Opera uchun */
 /* } */ */
@@ -96,6 +103,19 @@ span {
 
 .mobile-nav {
     display: none;
+}
+
+.burger-line {
+    transition: transform 0.3s ease-in-out;
+}
+.burger-open .line1 {
+    transform: translateY(8px) rotate(45deg);
+}
+.burger-open .line2 {
+    opacity: 0;
+}
+.burger-open .line3 {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 @media only screen and (max-width: 940px) {
@@ -415,6 +435,10 @@ span {
         gap: 10px;
         margin: 0;
         overflow: auto;
+    }
+
+    .game-item-one {
+        background-position: 0;
     }
 
     .view-news {
