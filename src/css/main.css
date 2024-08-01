@@ -105,7 +105,7 @@ span {
     filter: drop-shadow(-1.928px 2.298px 1px rgba(0, 0, 0, 0.5));
 }
 
-#nav-mobile-close {
+#nav-mobile-open {
     display: none;
 }
 
@@ -120,7 +120,7 @@ span {
         display: none;
     }
 
-    #nav-mobile-close {
+    #nav-mobile-open {
         display: inline-block;
     }
 
