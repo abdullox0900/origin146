@@ -370,6 +370,13 @@ span {
     background-image: url('../image/game-one-img.png');
 }
 
+.bg-img {
+    background-image: url('../image/date-bg.png');
+    background-size: 55px;
+    width: 55px;
+    background-position: center center;
+}
+
 .view-news {
     display: flex;
     justify-content: center;
