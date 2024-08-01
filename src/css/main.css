@@ -24,8 +24,8 @@ body {
 
 /* body::-webkit-scrollbar {
     display: none;  /* Chrome, Safari va Opera uchun */
-/* } */ */
-
+/* } */
+*/
 /* body::after {
     content: '';
     position: absolute;
@@ -105,7 +105,7 @@ span {
     filter: drop-shadow(-1.928px 2.298px 1px rgba(0, 0, 0, 0.5));
 }
 
-.mobile-nav {
+#nav-mobile-close {
     display: none;
 }
 
@@ -118,6 +118,10 @@ span {
 
     .nav {
         display: none;
+    }
+
+    #nav-mobile-close {
+        display: inline-block;
     }
 
     .nav-list__link {
@@ -265,11 +269,13 @@ span {
 }
 
 .container-game::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari va Opera uchun */
+    display: none;
+    /* Chrome, Safari va Opera uchun */
 }
 
 .game::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari va Opera uchun */
+    display: none;
+    /* Chrome, Safari va Opera uchun */
 }
 
 .game {
@@ -403,9 +409,9 @@ span {
         /* margin-right: 30px; */
     }
 
-    
+
     .hero-img-one {
-      display: none;
+        display: none;
     }
 
     .hero-img-two {
@@ -574,9 +580,12 @@ span {
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.1);
     }
@@ -587,6 +596,6 @@ span {
 }
 
 .hover-scale:hover {
-        
+
     /* transform: scale(1.05); */
 }
