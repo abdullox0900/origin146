@@ -226,7 +226,7 @@ span {
     }
 
     .logo-section a {
-        width: 300px;
+        width: 290px;
         padding: 16px 0;
         font-size: 14px;
     }
@@ -429,6 +429,15 @@ span {
 @media only screen and (max-width: 1140px) {
     .game-news__item {
         padding: 20px;
+    }
+
+    .game-news__item p {
+        margin-left: 20px;
+    }
+
+    .bg-img {
+        width: 50px;
+        font-size: 14px;
     }
 }
 
