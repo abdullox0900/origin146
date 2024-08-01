@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./src/css/sakura.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2" defer></script>
+
     <title>Document</title>
     <style>
         .w-710 {
@@ -53,6 +55,37 @@
                     </li>
                 </ul>
             </nav>
+            <nav id="nav-mobile" class="nav-mobile absolute left-0 top-[-600px] z-50 bg-gradient-to-t-nav text-center w-full py-[30px] h-[600px]">
+                <ul class="nav-list flex-col">
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Главная</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Личный кабинет</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">О сервере</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Форум</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="#" class="nav-list__link">Скачать</a>
+                    </li>
+                </ul>
+                <button id="nav-mobile-close" class="absolute right-2 top-2 z-55">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#fff" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
+                </button>
+            </nav>
+            <button id="nav-mobile-open" class="text-white text-[22px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
         </div>
     </header>
 
@@ -62,17 +95,22 @@
     <main class="flex-grow w-[1550px] mx-auto relative max-[1550px]:w-[100%]">
         <section class="logo-section">
             <img class="animated-image" src="./src/image/site-logo.png" alt="site-logo" width="330" height="350">
-            <a href="#" class="transform transition-transform duration-300 ease-in-out hover:scale-110">Начать играть</a>
+            <a href="#" class="transform transition-transform duration-300 ease-in-out hover:scale-110">Начать
+                играть</a>
         </section>
 
         <span class="hero-img-one"></span>
         <span class="hero-img-two"></span>
 
         <div class="flex flex-col min-[1024px]:flex-row gap-[20px] px-[20px]">
-            <div class="w-full min-[1024px]:w-6/10  transform transition-transform duration-300 ease-in-out hover:scale-105">
+            <div
+                class="w-full min-[1024px]:w-6/10 relative transform transition-transform duration-300 ease-in-out hover:scale-105">
+                <span
+                    class="absolute left-[0px] bg-[#62aafb] px-[5px] py-[15px] rounded-[15px] leading-none  text-lg tracking-[1px] leading-[18px] text-white font-[bold] text-center border border-solid border-[rgba(255,255,255,0.03)]">15
+                    <br>02/12</span>
                 <div class="game-news__item game-item-one relative">
                     <h4>Lorem Ipsum</h4>
-                    <p >
+                    <p>
                         Это место, где ты можешь отдохнуть от ставших
                         привычными гонок по головам, наслаждаясь тем
                         самым Идеальным Миром, который когда-то покорил
@@ -82,7 +120,8 @@
                     <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black to-transparent z-0"></div>
                 </div>
             </div>
-            <div class="w-full min-[1024px]:w-3/5 transform transition-transform duration-300 ease-in-out hover:scale-105">
+            <div
+                class="w-full min-[1024px]:w-3/5 transform transition-transform duration-300 ease-in-out hover:scale-105">
                 <div class="game-news__item game-item-two ">
                     <h4>Lorem Ipsum</h4>
                     <p>
@@ -96,7 +135,8 @@
 
                 </div>
             </div>
-            <div class="w-full min-[1024px]:w-3/5 transform transition-transform duration-300 ease-in-out hover:scale-105">
+            <div
+                class="w-full min-[1024px]:w-3/5 transform transition-transform duration-300 ease-in-out hover:scale-105">
                 <div class="game-news__item game-item-three">
                     <h4>Lorem Ipsum</h4>
                     <p>
@@ -110,7 +150,8 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="view-news transform transition-transform duration-300 ease-in-out hover:scale-105">СМОТРЕТЬ ВСЕ НОВОСТИ НА ФОРУМЕ</a>
+        <a href="#" class="view-news transform transition-transform duration-300 ease-in-out hover:scale-105">СМОТРЕТЬ
+            ВСЕ НОВОСТИ НА ФОРУМЕ</a>
     </main>
     <!-- Main End -->
 
